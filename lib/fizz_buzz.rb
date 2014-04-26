@@ -1,10 +1,10 @@
 module FizzBuzz
   def self.fizz_buzz(number:)
-    if number % 3 == 0 && number % 5 == 0 then
+    if number % 3 == 0 && number % 5 == 0
       "FizzBuzz"
-    elsif number % 3 == 0 then 
+    elsif number % 3 == 0
       "Fizz"
-    elsif number % 5 == 0 then
+    elsif number % 5 == 0
       "Buzz"
     else
       number
