@@ -1,17 +1,9 @@
 module FizzBuzz
   def self.fizz_buzz(number:)
-    if number % 3 == 0 && number % 5 == 0
-      "FizzBuzz"
-    elsif number % 3 == 0
-      "Fizz"
-    elsif number % 5 == 0
-      "Buzz"
-    else
-      number
-    end
+    ret_value = ""
+    ret_value << "Fizz" if number % 3 == 0
+    ret_value << "Buzz" if number % 5 == 0
+    ret_value = number if ret_value.empty?
+    ret_value
   end
-end
-
-(1..100).each do |i|
-  p FizzBuzz.fizz_buzz(number: i)
 end
